@@ -1,0 +1,79 @@
+body, #header { background-color: #002136; }
+
+#header { margin-bottom: 0px; height: 8em;}
+#footer { margin-top: 0px;}
+
+#homepage #container,
+#overview #container,
+#download #container,
+#documentation #container,
+#weblog #container,
+#community #container,
+#blogroll #container {
+    max-width: 92em;
+    margin-left: auto;
+    margin-right: auto; }
+
+#content-main { background: #fdfdfd url(/media/img/site/content-main-bg.png) top repeat-x; }
+#columnwrap { background: #233f52 url(/media/img/site/columnwrap-bg.png) bottom repeat-x; }
+#content-secondary { background: #455d6c url(/media/img/site/content-secondary-bg.png) top repeat-x; }
+
+#content-secondary h3,
+.sidebar h3 { color:#66b0de; }
+
+#header h1#logo { margin:0; width:151px; height:60px; position:absolute; bottom:43px; left:25px; }
+
+#nav-global a { color:white; background:#002136 url(/media/img/site/nav_bg.png) bottom repeat-x; margin-left: 2px;}
+#nav-global a:hover { background:#002136 url(/media/img/site/nav_bg_hover.png) bottom repeat-x; }
+
+#nav-upstream a { color:white; background:#002136 url(/media/img/site/nav_bg_green.png) bottom repeat-x; margin-left: 2px;}
+#nav-upstream a:hover { background:#002136 url(/media/img/site/nav_bg_green_hover.png) bottom repeat-x; }
+
+#homepage #nav-homepage a, #overview #nav-overview a, #download #nav-download a,
+#documentation #nav-documentation a, #weblog #nav-weblog a, #community
+#nav-community a, #blogroll #nav-blogroll a, #code #nav-code a {
+    color:white;
+    background:#002136 url(/media/img/site/nav_bg_active.png) bottom repeat-x;
+    margin-left: 2px;
+    }
+
+h2.deck { color: #455d6c; }    
+#footer { color: #455d6c; }
+    
+h1, h1 {
+    color: #002136;
+}
+
+#billboard{
+    margin:0;
+    padding:14px 0 0 0;
+    background-color:#51a8de;
+    background-image:url("/media/img/site/background_billboard_top.png");
+    background-position:top left;
+    background-repeat:repeat-x;
+}
+#billboard h2{
+    color:white;
+    margin:0;
+    padding:0 0 14px 16px;
+    font-size:18px;
+    font-weight:bold;
+    background-image:url("/media/img/site/background_billboard_bottom.png");
+    background-position:bottom left;
+    background-repeat:repeat-x;
+}
+#billboard h2 a{
+    color:white;
+}
+#billboard h2 span{
+    display:block;
+    margin:0;
+    padding:0;
+    font-size:14px;
+    font-weight:bold;
+    color:#233f52;
+}
+
+#billboard h2,
+#billboard h2 span {font-weight: normal;}
+

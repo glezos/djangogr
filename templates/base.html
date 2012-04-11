@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="el" lang="el">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="el" />
+
+		<title>Ελληνική κοινότητα Django | {% block title %}Η πλατφόρμα ανάπτυξης Web εφαρμογών για τελειομανείς με προθεσμίες{% endblock %}</title>
+
+		<meta name="ROBOTS" content="ALL" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta name="MSSmartTagsPreventParsing" content="true" />
+		<meta name="Copyright" content="This site's design and contents Copyright (c) 2005  Lawrence Journal-World." />
+
+		<meta name="keywords" content="Python, Django, framework, open-source, ελεύθερο λογισμικό, ΕΛΛΑΚ, " />
+		<meta name="description" content="Το Django είναι μια πλατφόρμα ανάπτυξης Web εφαρμογών υψηλού επιπέδου σε Python, το οποίο προωθεί τη γρήγορη ανάπτυξη λογισμικού και τον καθαρό, πρακτικό σχεδιασμό." />
+
+    <link rel="shortcut icon" href="/media/img/site/favicon.ico" type="image/x-icon" />
+		<link href="/media/css/{% block cssid %}base{% endblock %}.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/media/css/local.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/media/css/print.css" rel="stylesheet" type="text/css" media="print" />
+      {% block extrahead %}{% endblock %}
+	</head>
+
+	<body id="{% block sectionid %}generic{% endblock %}" class="{% block coltype %}default{% endblock %}">
+
+	<div id="container">
+		<div id="header">
+			<h1 id="logo"><a href="/"><img src="/media/djangogr_hdr_logo.png" alt="Django.gr" /></a></h1>
+			<ul id="nav-global">
+				<li id="nav-homepage"><a href="/" title="Αρχική σελίδα">Αρχική</a></li>
+				<!-- <li id="nav-weblog"><a href="/weblog/" title="Το ιστολόγιο μας">Ιστολόγιο</a></li> -->
+<!--
+				<li id="nav-documentation"><a href="/documentation/">Τεκμηρίωση</a></li>
+				<li id="nav-download"><a href="/download/">Download</a></li>
+				<li id="nav-community"><a href="/community/">Community</a></li>
+				<li id="nav-code"><a href="http://code.djangoproject.com/">Code</a></li>
+-->
+				<li id="nav-upstream"><a href="http://www.djangoproject.com/" title="Ο κεντρικός κόμβος του έργου Django">Django project</a></li>
+			</ul>
+		</div>
+		<!-- END Header -->
+		<div id="billboard">{% block billboard %}{% endblock %}</div>
+		<div id="columnwrap">
+			{% block columnwrap %}
+				<div id="content-main">
+				{% block content %}{% endblock %}
+				</div>
+				<!-- END #content-main -->
+			{% endblock %}
+		</div>
+		<!-- END #content -->
+		<div id="footer">
+			<!-- <p>&copy; 2005-{% now "Y" %} <a href="http://www.ljworld.com/">Lawrence Journal-World</a> unless otherwise noted.</p> -->
+			<p>Django is a registered trademark of <a href="http://www.ljworld.com/">Lawrence Journal-World</a>.
+			Lawrence Journal-World is not responsible for the content of this website.</p>
+			<p>Φιλοξενία υπηρεσιών από τη <a href="http://www.webfaction.com/?affilate=opendev">Webfaction</a>.</p>
+		</div>
+	</div>
+	<!-- END #container -->
+	</body>
+</html>
+
